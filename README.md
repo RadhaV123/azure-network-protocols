@@ -111,19 +111,20 @@ Part 6. Back in Wireshark, filter for SSH traffic only
 - Exit the SSH connection by typing ‘exit’ and pressing [Enter]
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="part 6.jpg"/>
 </p>
-<p>
-![img11](https://github.com/RadhaV123/azure-network-protocols/assets/171521525/e06a00cb-3d5f-4e9f-8be7-b6e89b6cf611)</p>
-<p>
+
 Part 7. Filter for DHCP traffic only
 
 - From your Windows 10 VM, attempt to issue your VM a new IP address from the command line (ipconfig /renew)
 - Observe the DHCP traffic appearing in WireShark
 </p>
+
 <p>
-<![image](https://github.com/RadhaV123/azure-network-protocols/assets/171521525/d6c45bec-521f-443a-9cb8-4883849ffd26)/>
+<img src="image.png"/>
 </p>
+<p>
+<img src="img11.jpg"/>
 </p>
 
 <p>

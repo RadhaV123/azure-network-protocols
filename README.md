@@ -21,7 +21,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Actions and Observations</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="d77.jpg"/>
 </p>
 <p>
 Step 1. In Azure, Setup a Resource Groups
@@ -29,7 +29,16 @@ Step 1. In Azure, Setup a Resource Groups
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="d2.jpg"/>
+</p>
+<p>
+<img src="d3.jpg"/>
+</p>
+<p>
+<img src="d4.jpg"/>
+</p>
+<p>
+<img src="d5.jpg"/>
 </p>
 <p>
 Step 2. Create 2 Virtual Machines
@@ -46,7 +55,7 @@ Note: Wait for VM-1 to finish Deploying before creating VM-2. If not, the Vnet y
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="hd6.jpg"/>
 </p>
 <p>
 Step 3. Open Microsoft Remote Desktop (If on Mac)
@@ -56,7 +65,7 @@ Step 3. Open Microsoft Remote Desktop (If on Mac)
 - Open VM-1 on the Microsoft Remote Desktop after adding the PC
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="d7.jpg"/>
 </p>
 <p>
 Part 4. Install Software Within Windows 10 VM-1
@@ -65,17 +74,17 @@ Part 4. Install Software Within Windows 10 VM-1
 - Open Wireshark filter for ICMP traffic only by hitting the blue shark icon and typing in "ICMP"
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="d78.jpg"/>
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="d8.jpg"/>
 </p>
 <p>
 - Retrieve the private IP address of the Ubuntu VM-2 and attempt to ping it from within the Windows 10 VM-1
 - Observe ping request and replies within wireshark
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="d9.jpg"/>
 </p>
 <p>
 Part 5. Initiate a perpetual/non-stop ping from your Windows 10 VM-1 to your Ubuntu VM-2
@@ -84,7 +93,7 @@ Part 5. Initiate a perpetual/non-stop ping from your Windows 10 VM-1 to your Ubu
 - Observe the ICMP traffic in WireShark and the command line Ping activity
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="d10.jpg"/>
 </p>
 <p>
 - Open the Network Security Group your Ubuntu VM-2 is using and disable incoming (inbound) ICMP traffic
@@ -92,17 +101,17 @@ Part 5. Initiate a perpetual/non-stop ping from your Windows 10 VM-1 to your Ubu
 - Back in the Windows 10 VM-1, observe the ICMP traffic in WireShark and the command line Ping activity after adding a new rule
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="d11.jpg"/>
 </p>
 <p>
 - "Request timed out" - Re-enable ICMP traffic for the Network Security Group your Ubuntu VM-2 is using - Back in the Windows 10 VM-1, observe the ICMP traffic in WireShark and the command line Ping activity (should start working) 
 - Stop the ping activity with shift+control+C
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="d12.jpg"/>
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="d13.jpg"/>
 </p>
 <p>
 Part 6. Back in Wireshark, filter for SSH traffic only
@@ -121,7 +130,7 @@ Part 7. Filter for DHCP traffic only
 </p>
 
 <p>
-<img src="image.png"/>
+<img src="under7.jpg"/>
 </p>
 <p>
 <img src="img11.jpg"/>
